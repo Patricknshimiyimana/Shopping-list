@@ -1,6 +1,6 @@
 import React from 'react';
 
-import TodoItem from './TodoItem';
+import ShoppingItem from './ShoppingItem';
 
 // CSS
 import '../css/todo-list.css';
@@ -8,7 +8,7 @@ import '../css/todo-list.css';
 class TodoList extends React.Component {
     render(){
         const todoItemComponents = this.props.todoItems.map((todo, index) => {
-            return <TodoItem 
+            return <ShoppingItem 
                 details={todo} key={todo.id} 
                 deleteTodo={this.props.deleteTodo} 
                 toggleCompleteTodo={this.props.toggleCompleteTodo}

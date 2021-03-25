@@ -47,7 +47,7 @@
     border-radius: 5px;
     text-align: left;
     font-weight: 600;
-    box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.644);
+    box-shadow: transparent;
 }
 
 #navbar-user-info > div > span{
@@ -78,8 +78,7 @@
     width: 600px;
     height: 300px;
     position: fixed;
-    background-color: rgb(240, 240, 240);
-    box-shadow: 15px 15px 15px var(--highlight);
+    background-color: rgb(67, 69, 71);
     left: 50%;
     top: 65px;
     transform: translateX(-50%);
@@ -90,13 +89,13 @@
 }
 
 #auth-form-title {
-    background-color: var(--main-color);
+    background-color: rgb(38, 38, 49);
     color: white;
     padding: 10px;
 }
 
 #close-auth-form {
-    background-color: red;
+    background-color: rgb(123, 123, 226);
     color: white;
     position: absolute;
     right: 0;
@@ -120,14 +119,7 @@
 #auth-form-button {
     display: block;
     margin: 0 auto;
-    color: white;
-    background-color: var(--main-color);
-    border: none;
-    outline: none;
-    padding: 10px 15px;
-    border-radius: 5px;
     cursor: pointer;
-    box-shadow: 3px 3px 3px var(--highlight);
 }
 
 #auth-form-button:hover {
