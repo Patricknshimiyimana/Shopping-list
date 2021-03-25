@@ -1,6 +1,6 @@
 {
   "name": "shopping_list",
-  "homepage": "https://patricknshimiyimana.github.io/shopping", 
+  "homepage": "https://patricknshimiyimana.github.io/shopping",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
