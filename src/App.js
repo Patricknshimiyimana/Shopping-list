@@ -1,4 +1,3 @@
-// import Banner from './images/banner.jpg';
 
 function App() {
   return (
