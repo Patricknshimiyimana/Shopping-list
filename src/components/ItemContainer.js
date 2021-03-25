@@ -2,9 +2,9 @@ import React from 'react';
 import Todo from '../models/Todo';
 
 // Componenets
-import TodoList from './TodoList';
-import TodoForm from './TodoForm';
-import TodoTools from './TodoTools';
+import ItemList from './ItemList';
+import ItemForm from './ItemForm';
+import ItemTools from './ItemTools';
 
 //Database
 import {auth, db} from '../service/firebase';
@@ -12,7 +12,7 @@ import {auth, db} from '../service/firebase';
 // CSS
 import '../css/todo-container.css';
 
-class TodoContainer extends React.Component {
+class ItemContainer extends React.Component {
     constructor(props){
         super(props);
         this.state = {
@@ -155,9 +155,9 @@ class TodoContainer extends React.Component {
     render(){
         
         return(
-            <div id="todo-container">
-                <TodoForm addTodo={this.addTodo}/>
-                <TodoTools 
+            <div id="item-container">
+                <ItemForm addTodo={this.addTodo}/>
+                <ItemTools 
                     getDailyTasks={this.getDailyTasks}
                     getAllTasks={this.getAllTasks}
                     getImportantTasks={this.getImportantTasks}
@@ -166,7 +166,7 @@ class TodoContainer extends React.Component {
                     resetDailyTasks={this.resetDailyTasks}
                     filterMode={this.state.filterMode}
                 />
-                <TodoList todoItems={this.state.todoItems}
+                <ItemList todoItems={this.state.todoItems}
                     deleteTodo={this.deleteTodo}
                     toggleCompleteTodo={this.toggleCompleteTodo}
                     updateNotes={this.updateNotes}
@@ -176,4 +176,4 @@ class TodoContainer extends React.Component {
     }
 }
 
-export default TodoContainer;
+export default ItemContainer;

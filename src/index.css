@@ -1,3 +1,8 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --main-color: rgb(0, 129, 235);
   --highlight: rgba(0, 129, 235, 0.20);
